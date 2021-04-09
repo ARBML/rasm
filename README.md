@@ -28,7 +28,7 @@ model = Rasm(mode = 'mosaics')
 
 ### Generate random 
 ```python 
-sgan.generate_randomly()
+model.generate_randomly()
 ```
 
 ### Generate grid 
