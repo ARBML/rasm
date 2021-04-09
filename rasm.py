@@ -18,7 +18,7 @@ import imageio
 import glob
 import gdown 
 
-class SGAN:
+class Rasm:
 
     def __init__(self, mode = 'calligraphy'):
 
@@ -30,7 +30,7 @@ class SGAN:
 
         output = 'model.pkl'
         print('Downloading networks from "%s"...' %url)
-        gdown.download(url, output, quiet=True)
+        gdown.download(url, output, quiet=False)
         dnnlib.tflib.init_tf()
         with dnnlib.util.open_url(output) as fp:
             self._G, self._D, self.Gs = pickle.load(fp)

@@ -21,9 +21,9 @@ A set of functions for vis, interpolation and animation. Mostly tested in colab 
 
 ### Load Model 
 ```python 
-from sgan import SGAN
-model = rasm(mode = 'calligraphy')
-model = rasm(mode = 'mosaics')
+from rasm import Rasm
+model = Rasm(mode = 'calligraphy')
+model = Rasm(mode = 'mosaics')
 ```
 
 ### Generate random 
