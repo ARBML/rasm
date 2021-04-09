@@ -1,5 +1,5 @@
 ## rasm
-Arabic art using mosaics and calligraphy. 
+Arabic art using GANs. We currently have two models for generating calligraphy and mosaics.  
 
 ## Notebooks 
 
@@ -47,12 +47,14 @@ model.generate_animation(size = 2, steps = 20)
 
 ### Mosaics 
 ![alt text](imgs/mosaic.png)
-
+![alt text](imgs/mosaicsv2.png)
+![alt text](imgs/mosaicsv3.png)
+![alt text](imgs/mosaicsv4.png)
 ### Calligraphy 
 ![alt text](imgs/calligraphyv2.PNG)
 ![alt text](imgs/calligraphyv3.png)
 ![alt text](imgs/calligraphyv4.png)
-![alt text](imgs/calligraphyv4.png)
+![alt text](imgs/calligraphyv5.png)
 
 
 ## References 
