@@ -108,10 +108,12 @@ class Rasm:
 
     # Generates a list of images, based on a list of seed for latent vectors (Z), and a list (or a single constant) of truncation_psi's.
     def generate_images_from_seeds(self, seeds, truncation_psi):
-        return imshow(self.generate_images(self.generate_zs_from_seeds(seeds), truncation_psi)[0])
+        ima = self.generate_images(self.generate_zs_from_seeds(seeds), truncation_psi)[0]
+        return ima, imshow(ima)
 
     def generate_randomly(self, truncation_psi = 0.5):
-        return self.generate_images_from_seeds(np.random.randint(4294967295, size=1), truncation_psi=truncation_psi)
+        ima, dis = self.generate_images_from_seeds(np.random.randint(4294967295, size=1), truncation_psi=truncation_psi)
+        return ima, dis 
 
     def generate_grid(self, truncation_psi = 0.7): 
       seeds = np.random.randint((2**32 - 1), size=9)
